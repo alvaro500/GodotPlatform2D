@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://d5mraedvwepd"]
+[gd_scene load_steps=10 format=3 uid="uid://d5mraedvwepd"]
 
 [ext_resource type="PackedScene" uid="uid://cdvlqk8fk18cv" path="res://Escenas/Jugador.tscn" id="1_8vb6x"]
 [ext_resource type="Texture2D" uid="uid://cyu1t35kyh77t" path="res://Recursos/sprites/world_tileset.png" id="2_jagh5"]
 [ext_resource type="PackedScene" uid="uid://ci0j25tfg20kq" path="res://Escenas/Plataforma.tscn" id="3_v7hn5"]
+[ext_resource type="PackedScene" uid="uid://dpe7j5pnudh61" path="res://Escenas/Moneda.tscn" id="4_gesqh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vsx76"]
 texture = ExtResource("2_jagh5")
@@ -231,3 +232,12 @@ libraries = {
 "": SubResource("AnimationLibrary_dahcg")
 }
 autoplay = "Movimiento"
+
+[node name="Moneda" parent="." instance=ExtResource("4_gesqh")]
+position = Vector2(104, -23)
+
+[node name="Moneda2" parent="." instance=ExtResource("4_gesqh")]
+position = Vector2(235, 22)
+
+[node name="Moneda3" parent="." instance=ExtResource("4_gesqh")]
+position = Vector2(487, 22)
